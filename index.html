@@ -329,6 +329,92 @@
     .matrix-row{grid-template-columns:120px repeat(var(--cols,28),18px)}
     .matrix-header{grid-template-columns:120px repeat(var(--cols,28),18px)}
   }
+
+  /* PHONE — tightens layout below 540px */
+  @media (max-width:540px){
+    .wrap{padding:16px 12px 60px}
+    header.hero{padding:18px 16px;border-radius:14px}
+    h1.title{font-size:26px;letter-spacing:-.01em}
+    .subtitle{font-size:11px}
+    .quote{font-size:12px;margin-top:6px}
+    .hero-row{gap:14px;align-items:flex-start}
+    .day-pill{padding:6px 12px;font-size:11px}
+    .day-pill .num{font-size:18px}
+
+    /* 3-col stat row reads better than 2x3 on phones */
+    .stat-row{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:14px}
+    .stat{padding:8px 10px;border-radius:10px}
+    .stat .v{font-size:16px}
+    .stat .l{font-size:9px;letter-spacing:.06em}
+
+    /* compact data-source row */
+    .data-source{gap:6px;font-size:10px;justify-content:flex-end}
+    .data-source button{padding:5px 10px;font-size:10px}
+    .date-filter{padding:3px 8px;font-size:10px}
+    .date-filter input{font-size:11px}
+
+    /* tabs scroll horizontally as a single row instead of wrapping */
+    nav.tabs{overflow-x:auto;flex-wrap:nowrap;padding:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    nav.tabs::-webkit-scrollbar{display:none}
+    nav.tabs button{flex:0 0 auto;min-width:0;padding:10px 14px;font-size:11px;white-space:nowrap}
+
+    /* panels */
+    .panel{padding:16px 14px;border-radius:12px;margin-bottom:14px}
+    .panel h2{font-size:18px}
+    .panel .desc{font-size:12px;margin-bottom:14px}
+
+    /* podium stacks for clean reading */
+    .podium{grid-template-columns:1fr;gap:10px;margin-bottom:18px}
+    .podium-card{padding:14px}
+    .podium-card .pts{font-size:28px}
+    .podium-card.tied .avatars-row .avatar{width:42px;height:42px}
+
+    /* leaderboard table — hide Pace column on phones, tighten cells */
+    table.leaderboard th:nth-child(6),
+    table.leaderboard td:nth-child(6){display:none}
+    table.leaderboard th{padding:8px 4px;font-size:10px}
+    table.leaderboard td{padding:8px 4px;font-size:12px}
+    .pts-num{font-size:15px}
+    .pts-num .bonus{font-size:11px}
+    .pts-bar{width:60px}
+    .player-cell{gap:6px}
+    .player-cell .avatar{width:26px;height:26px}
+    .team-tag{font-size:9px;padding:1px 6px}
+
+    /* day matrix: smaller cells so more days fit before scroll */
+    .matrix-row,.matrix-header{grid-template-columns:80px repeat(var(--cols,28),12px) !important;gap:2px}
+    .matrix-row .day{height:14px;border-radius:3px}
+    .matrix-row .player{font-size:11px;padding-right:4px}
+    .matrix-row .player .avatar{width:20px;height:20px}
+    .matrix-row .player .name{font-size:11px}
+    .matrix-header > div{font-size:8px}
+
+    /* consistency rows — tighter grid + visual sizing */
+    .scale-row,.cons-row{grid-template-columns:90px 1fr 34px 46px;gap:8px}
+    .cons-row{padding:10px 0}
+    .cons-player{gap:8px}
+    .cons-player .avatar.lg{width:32px;height:32px}
+    .cons-player .name{font-size:11px}
+    .cons-track{height:32px}
+    .cons-bar-max{height:10px;top:6px;padding-right:4px;font-size:9px}
+    .cons-bar-current{height:4px;top:20px}
+    .cons-val{font-size:13px}
+    .col-h{font-size:9px}
+
+    /* teams */
+    .team-card{padding:18px}
+    .team-card h3{font-size:20px}
+    .team-card .avg-num{font-size:44px}
+    .team-card .avg-num small{font-size:14px}
+    .team-card .stat-mini .v{font-size:16px}
+
+    /* engagement cards */
+    .eng-card{padding:14px}
+    .eng-item .name{font-size:12px}
+
+    /* matrix legend stays on one wrap if possible */
+    .matrix-legend{font-size:10px;gap:10px}
+  }
 </style>
 </head>
 <body>

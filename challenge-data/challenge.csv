@@ -1,2 +1,2 @@
-id,name,description,start_date,end_date,photo_url,score_by
-3276500,Mês de MALHO (Premio Alex Miamizado),,2026-05-04T00:00:00.000000Z,2026-05-31T00:00:00.000000Z,https://cdn.gymrats.app/d82b1176-6661-48d6-a1cd-d9d1cfe3131b.jpg,days
+id,name,description,start_date,end_date,score_by,photo_url
+3276500,Mês de MALHO (Premio Alex Miamizado),,2026-05-04T00:00:00.000000Z,2026-05-31T00:00:00.000000Z,days,https://cdn.gymrats.app/d82b1176-6661-48d6-a1cd-d9d1cfe3131b.jpg
